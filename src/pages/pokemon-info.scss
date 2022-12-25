@@ -1,0 +1,15 @@
+.pokemon-ingo-page {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 28rem auto;
+  grid-template-rows: auto auto;
+  background-color: #f6f8fc;
+}
+.logo-container {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
