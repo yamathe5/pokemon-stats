@@ -1,0 +1,171 @@
+@use "./breakpoints" as u;
+
+$red-300: #ef3340;
+$red-500: #ff1c44;
+
+$purple-color: #6f7dff;
+$white-color: #ffffff;
+
+$gray-100: #a3abcc;
+$gray-300: #676f8f;
+$gray-500: #494f66;
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.section__selected {
+  border-bottom: 2px solid #ef3340;
+}
+
+// Colors
+.red-300 {
+  color: $red-300;
+}
+.red-500 {
+  color: $red-500;
+}
+.gray-100 {
+  color: $gray-100;
+}
+.gray-300 {
+  color: $gray-300;
+}
+.gray-500 {
+  color: $gray-500;
+}
+.purple-500 {
+  color: $purple-color;
+}
+
+.green-300 {
+  color: #389e0d;
+}
+
+//@at-root
+
+.mg-top-24 {
+  margin-top: 2.4rem;
+}
+
+.ml-16 {
+  margin-left: 1.6rem;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+// Text
+// Headlines
+.headline-xxs {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.headline-xs {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.headline-sm {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+
+  @include u.breakpoint(large) {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+  }
+}
+
+.headline-md {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.6px;
+  @include u.breakpoint(large) {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+  }
+}
+
+.headline-lg {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+}
+.headline-xl {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.6px;
+}
+
+// Regular text
+// Regular text
+
+.text-xs {
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.text-sm {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.text-md {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.text-lg {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.text-xl {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.gap {
+  gap: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// font-weight
+
+.font-300 {
+  font-weight: 300;
+}
+.font-400 {
+  font-weight: 400;
+}
+.font-700 {
+  font-weight: 700;
+}
