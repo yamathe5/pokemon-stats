@@ -39,9 +39,9 @@ export default function PokemonCardBattle({ pokemon, classes, pokemon2 }) {
     }
     // pokemon != null ? fetchData(pokemon) : fetchData(pokemon2);
   }, [pokemon, pokemon2]);
-  console.log("Hola", pokemonInfo2);
+
   return (
-    <div className={`grid2-4`}>
+    <div className={`grid3-5`}>
       <div className="pokemon-card-info">
         <img src={BattleLogo} alt="Logo Batalla pokemon" />
         <div className="pokemon-card">

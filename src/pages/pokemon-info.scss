@@ -1,6 +1,6 @@
 .pokemon-ingo-page {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 28rem auto;
   grid-template-rows: auto auto;
@@ -12,4 +12,5 @@
   height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }

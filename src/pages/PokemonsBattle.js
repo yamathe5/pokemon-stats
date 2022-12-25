@@ -35,7 +35,7 @@ export default function PokemonBattle() {
 
       <PokemonNav
         pokemons={pokemons}
-        classes={"grid4-5"}
+        classes={"grid5-6"}
         setPokemon2={setPokemon2}
       ></PokemonNav>
     </div>

@@ -1,21 +1,39 @@
 .pokemons-nav {
   height: 100%;
-  max-height: 95vh;
-  overflow-y: scroll;
+  max-height: 80vh;
 
   grid-column: 1/2;
   grid-row: 2/3;
 
   border-radius: 2rem;
-  background-color: rgb(255, 245, 245);
-  padding: 1.2rem 1.2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0.8rem 0.8rem;
   margin: 1.2rem 1.2rem;
+  width: fit-content;
+  &__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 2.8rem;
+    background-color: #f7665e;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    &--green {
+      background-color: #77dd77;
+    }
+  }
+
+  &-content {
+    max-height: 80vh;
+    overflow: auto;
+    border-radius: 2rem;
+    padding-right: 0.4rem;
+  }
 }
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #8f54a0 #ffffff;
+  scrollbar-color: #dbdbdb #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -28,19 +46,20 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #f5d3ff;
+  background-color: #dbdbdb;
   border-radius: 10px;
   border: 3px solid #ffffff;
   height: 100px;
 }
 
 .pokemons-nav__item {
-  max-width: 100%;
-  height: 48px;
-  margin: 8px 0;
+  max-width: 20rem;
+  height: auto;
+  // margin: 8px 0px;
   border-radius: 10px;
   background: #ffffff;
-  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  // box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  margin: 1.2rem;
   display: flex;
   align-items: center;
 }

@@ -1,9 +1,15 @@
 .pokemon-battle-page {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 28rem 1fr 1fr 28rem;
-  grid-template-rows: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: #f6f8fc;
+  height: 100vh;
+  padding-bottom: 6rem;
+  // grid-template-columns: 5% 28rem 1fr 1fr 28rem 5%;
+  // grid-template-rows: 100%;
 }
 
 .grid1-2 {
@@ -18,15 +24,14 @@
   padding-top: 4rem;
   grid-column: 3/4;
 }
-.grid4-5 {
-  grid-column: 4/5;
+.grid5-6 {
+  grid-column: 5/6;
   grid-row: 1/2;
 }
 
-.grid2-4 {
-  grid-column: 2/4;
+.grid3-5 {
+  grid-column: 3/5;
   grid-row: 1/2;
   display: flex;
   justify-content: center;
-  padding-top: 4rem;
 }

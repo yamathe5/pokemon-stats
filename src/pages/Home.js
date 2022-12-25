@@ -1,11 +1,18 @@
 import React from "react";
 import PokemonBattle from "./PokemonsBattle";
 import PokemonInfoPage from "./PokemonInfoPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
-      <PokemonBattle></PokemonBattle>
+      <Router>
+        <Routes>
+          <Route path="/pokemon-battle" element={<PokemonBattle />} />
+
+          <Route path="/*" element={<PokemonInfoPage />} />
+        </Routes>
+      </Router>{" "}
     </>
   );
 }
