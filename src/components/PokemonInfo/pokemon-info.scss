@@ -1,0 +1,128 @@
+.grid-position-0 {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+.grid-position-1 {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+.grid-position-2 {
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+.grid-position-3 {
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+.grid-position-4 {
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+.grid-position-5 {
+  grid-row: 6/7;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+.stats-bar-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: auto;
+}
+.pokemon-info-container {
+  padding-top: 4rem;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.pokemon-info {
+  width: auto;
+  display: grid;
+  grid-template-columns: 10% 50% 30% 10%;
+  grid-template-rows: 1fr 1fr;
+  max-width: 140rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pokemon-info-card {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  padding: 2.8rem;
+  // width: 90rem;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 70% 20%;
+  &__name {
+    justify-self: left;
+  }
+  &__data {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 10rem;
+    &__types {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    &__others {
+      grid-row: 2/3;
+      display: flex;
+      gap: 4rem;
+      div {
+        text-align: center;
+      }
+    }
+  }
+  &__img {
+    width: 26rem;
+    justify-self: center;
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+  &__stats-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 1.2rem 1.6rem;
+    border-radius: 1.6rem;
+    gap: 0.8rem;
+    width: 32rem;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    justify-self: flex-end;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  &__evolves {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    > div {
+      gap: 1.2rem;
+      display: flex;
+    }
+  }
+}
+.stats-bar-container {
+  p {
+    display: inline-block;
+    width: 3rem;
+  }
+}
